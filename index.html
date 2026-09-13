@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
- <meta name="google-site-verification" content="Nkg2HEhmeRo4oG78bsuaX5KkAwoSk4Q2-PUD-2xKaBE" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Perspectiva — frases, reflexões e novas formas de enxergar a vida.">
 <meta name="theme-color" content="#171717">
@@ -82,7 +81,7 @@
   .cat { white-space:nowrap; border-radius:999px; transition:background .18s, color .18s, border-color .18s, transform .18s; }
   .cat:hover { transform:translateY(-1px); }
   .phrase-list { display:grid; gap:9px; }
-  .phrase-item { display:grid; grid-template-columns:48px minmax(0,1fr) 42px 42px 42px; align-items:center; min-height:68px; background:#fbfbf9; border:1px solid #e9e9e5; border-radius:17px; overflow:hidden; transition:transform .18s, border-color .18s, box-shadow .18s; }
+  .phrase-item { display:grid; grid-template-columns:48px minmax(0,1fr) 42px 42px 42px 42px; align-items:center; min-height:68px; background:#fbfbf9; border:1px solid #e9e9e5; border-radius:17px; overflow:hidden; transition:transform .18s, border-color .18s, box-shadow .18s; }
   .phrase-item:hover { transform:translateY(-1px); border-color:#deded9; box-shadow:0 7px 18px rgba(0,0,0,.045); }
   .number { height:100%; min-height:68px; display:grid; place-items:center; background:#f0f0ed; color:#697386; font-weight:750; font-size:.95rem; }
   .phrase-text { padding:13px 14px; font-family:Georgia,serif; font-size:1.02rem; line-height:1.4; text-align:left; }
@@ -91,6 +90,11 @@
   .icon-btn.saved { color:#171717; }
   .load-more { width:100%; justify-content:center; margin-top:18px; background:#171717; color:#fff; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,.08); }
   .featured { display:none; }
+  .about-panel { margin-top:22px; background:#171717; color:#fff; border-radius:34px; padding:clamp(24px,4vw,36px); box-shadow:0 18px 55px rgba(0,0,0,.10); }
+  .about-panel h2 { margin:5px 0 9px; font-size:clamp(1.8rem,4vw,2.45rem); letter-spacing:-.04em; }
+  .about-panel p { margin:0; max-width:720px; color:#b9b9b5; line-height:1.65; }
+  .about-kicker { color:#8f8f8b; text-transform:uppercase; letter-spacing:.16em; font-size:.67rem; font-weight:800; }
+  @media(max-width:600px){ .about-panel{border-radius:26px;padding:23px 18px}.about-panel p{font-size:.9rem;line-height:1.55} }
   .featured #quote { font-size:1.45rem; margin:14px auto 20px; }
 
   .font-select {
@@ -178,7 +182,7 @@
     .count { padding:8px 10px; font-size:.78rem; }
     .categories { margin-bottom:18px; }
     .cat { padding:8px 12px; font-size:.82rem; }
-    .phrase-item { grid-template-columns:39px minmax(0,1fr) 38px 38px 38px; min-height:64px; border-radius:15px; }
+    .phrase-item { grid-template-columns:39px minmax(0,1fr) 38px 38px 38px 38px; min-height:64px; border-radius:15px; }
     .number { min-height:64px; font-size:.82rem; }
     .phrase-text { padding:11px 9px; font-size:.96rem; line-height:1.38; }
     .icon-btn { width:38px; height:38px; font-size:1.08rem; }
@@ -189,7 +193,7 @@
   }
 
   @media (max-width:390px) {
-    .phrase-item { grid-template-columns:34px minmax(0,1fr) 34px 34px 34px; }
+    .phrase-item { grid-template-columns:34px minmax(0,1fr) 34px 34px 34px 34px; }
     .phrase-text { font-size:.91rem; }
     .icon-btn { width:34px; height:34px; font-size:1rem; }
   }
@@ -300,7 +304,7 @@ h1{max-width:760px;font-size:clamp(2.55rem,7vw,5.2rem);line-height:.94;letter-sp
 .cat{background:#f8f8f5;border-color:#deded8;color:#575752;padding:10px 15px;font-size:.84rem;}
 .cat.active{background:#171717;border-color:#171717;}
 .phrase-list{gap:10px;}
-.phrase-item{grid-template-columns:50px minmax(0,1fr) 44px 44px 44px;min-height:72px;background:#fafaf7;border-color:#e3e3de;border-radius:18px;}
+.phrase-item{grid-template-columns:50px minmax(0,1fr) 44px 44px 44px 44px;min-height:72px;background:#fafaf7;border-color:#e3e3de;border-radius:18px;}
 .number{min-height:72px;background:#f0f0eb;color:#777b80;}
 .phrase-text{font-size:1.04rem;padding:14px 16px;}
 .icon-btn{width:44px;height:44px;color:#70757b;}
@@ -321,7 +325,7 @@ footer{padding-bottom:34px;color:#999;font-size:.72rem;letter-spacing:.06em;}
  main{padding:22px 0 48px}.hero{padding:31px 24px 36px;border-radius:28px;margin-bottom:18px}h1{font-size:clamp(2.35rem,12.1vw,3.2rem);line-height:.95;letter-spacing:-.06em;margin-bottom:19px}.subtitle{font-size:.92rem;line-height:1.5;max-width:30rem}
  .card{border-radius:26px;padding:23px 12px 17px}.section-head{margin:2px 4px 17px;align-items:flex-start}.section-head h2{font-size:1.9rem;letter-spacing:-.04em}.list-subtitle{font-size:.84rem;line-height:1.4;max-width:230px}.count{font-size:.74rem;padding:8px 11px;white-space:nowrap}
  .categories{margin:0 -2px 18px;padding:2px 2px 9px;overflow-x:auto;scrollbar-width:none;display:flex;flex-wrap:nowrap}.categories::-webkit-scrollbar{display:none}.cat{padding:9px 13px;font-size:.79rem;white-space:nowrap;flex:0 0 auto}
- .phrase-list{gap:9px}.phrase-item{grid-template-columns:38px minmax(0,1fr) 36px 36px 36px;min-height:68px;border-radius:15px;overflow:hidden}.number{min-height:68px;font-size:.8rem}.phrase-text{padding:11px 9px;font-size:.92rem;line-height:1.34}.icon-btn{width:36px;height:36px;font-size:.98rem}
+ .phrase-list{gap:9px}.phrase-item{grid-template-columns:38px minmax(0,1fr) 36px 36px 36px 36px;min-height:68px;border-radius:15px;overflow:hidden}.number{min-height:68px;font-size:.8rem}.phrase-text{padding:11px 9px;font-size:.92rem;line-height:1.34}.icon-btn{width:36px;height:36px;font-size:.98rem}
  .favorites-panel{border-radius:26px}.bottom{border-radius:24px;padding:24px 16px}.insta{width:100%;justify-content:center}
 }
 </style>
@@ -381,6 +385,7 @@ footer{padding-bottom:34px;color:#999;font-size:.72rem;letter-spacing:.06em;}
           <button class="secondary" id="copy">📋 Copiar</button>
           <button class="secondary" id="favorite">♡ Favoritar</button>
           <button class="secondary" id="createImage">🖼️ Criar imagem</button>
+          <button class="secondary" id="sharePhrase">↗ Compartilhar</button>
         </div>
       </div>
     </section>
@@ -428,6 +433,14 @@ footer{padding-bottom:34px;color:#999;font-size:.72rem;letter-spacing:.06em;}
           <button type="button" class="secondary" id="createDayImage">🖼️ &nbsp; Criar imagem</button>
         </div>
       </div>
+    </section>
+
+
+    <section class="about-panel" id="aboutPerspectiva">
+      <div class="about-kicker">Sobre o PERSPECTIVA</div>
+      <h2>Frases para mudar sua perspectiva.</h2>
+      <p>O PERSPECTIVA nasceu para reunir frases e reflexões que convidam a pensar, sentir e enxergar as coisas por novos ângulos.</p>
+      <p style="margin-top:12px;">Aqui, cada palavra pode ser um ponto de partida para uma nova ideia, uma reflexão ou simplesmente alguns minutos de pausa.</p>
     </section>
 
     <section class="favorites-panel" id="favoritesPanel">
@@ -905,6 +918,7 @@ function renderPhraseList() {
       <span class="number">${index + 1}</span>
       <div class="phrase-text">“${phrase}”</div>
       <button class="icon-btn copy-one" data-phrase="${encodeURIComponent(phrase)}" title="Copiar">⧉</button>
+      <button class="icon-btn share-one" data-phrase="${encodeURIComponent(phrase)}" title="Compartilhar">↗</button>
       <button class="icon-btn create-one-image" data-phrase="${encodeURIComponent(phrase)}" title="Criar imagem">🖼️</button>
       <button class="icon-btn favorite-one ${favorites.includes(phrase) ? "saved" : ""}" data-phrase="${encodeURIComponent(phrase)}" title="Favoritar">${favorites.includes(phrase) ? "♥" : "♡"}</button>
     </div>
@@ -915,6 +929,22 @@ function renderPhraseList() {
       const phrase = decodeURIComponent(btn.dataset.phrase);
       try { await copyText(phrase); showToast("Frase copiada!"); }
       catch { showToast("Não foi possível copiar."); }
+    });
+  });
+
+  document.querySelectorAll(".share-one").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const phrase = decodeURIComponent(btn.dataset.phrase);
+      const data = { title: "PERSPECTIVA — Frase", text: `“${phrase}”\n\nConheça o PERSPECTIVA:\nhttps://josesantosnr23.github.io/Perspectiva-site/` };
+      try {
+        if (navigator.share) { await navigator.share(data); return; }
+      } catch (e) {
+        if (e && e.name === "AbortError") return;
+      }
+      try {
+        await copyText(data.text);
+        showToast("Frase copiada para compartilhar!");
+      } catch { showToast("Não foi possível compartilhar."); }
     });
   });
 
@@ -1042,6 +1072,7 @@ function renderFavorites() {
       <span class="number">${index + 1}</span>
       <div class="phrase-text">“${phrase}”</div>
       <button class="icon-btn copy-favorite" data-phrase="${encodeURIComponent(phrase)}" title="Copiar">⧉</button>
+      <button class="icon-btn share-favorite" data-phrase="${encodeURIComponent(phrase)}" title="Compartilhar">↗</button>
       <button class="icon-btn create-favorite-image" data-phrase="${encodeURIComponent(phrase)}" title="Criar imagem">🖼️</button>
       <button class="icon-btn remove-favorite" data-phrase="${encodeURIComponent(phrase)}" title="Remover dos favoritos">♥</button>
     </div>
@@ -1054,6 +1085,22 @@ function renderFavorites() {
         await copyText(phrase);
         showToast("Frase copiada!");
       } catch { showToast("Não foi possível copiar."); }
+    });
+  });
+
+  document.querySelectorAll(".share-favorite").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const phrase = decodeURIComponent(btn.dataset.phrase);
+      const data = { title: "PERSPECTIVA — Frase", text: `“${phrase}”\n\nConheça o PERSPECTIVA:\nhttps://josesantosnr23.github.io/Perspectiva-site/` };
+      try {
+        if (navigator.share) { await navigator.share(data); return; }
+      } catch (e) {
+        if (e && e.name === "AbortError") return;
+      }
+      try {
+        await copyText(data.text);
+        showToast("Frase copiada para compartilhar!");
+      } catch { showToast("Não foi possível compartilhar."); }
     });
   });
 
@@ -1232,6 +1279,24 @@ document.getElementById("fontSizeRange").addEventListener("input", e => {
   imageFontSize = Number(e.target.value);
   document.getElementById("fontSizeValue").textContent = `${imageFontSize} px`;
   drawQuoteImage();
+});
+
+document.getElementById("sharePhrase").addEventListener("click", async () => {
+  const text = quoteEl.textContent.replace(/[“”]/g, "").trim();
+  if (!text) return;
+  const data = { title: "PERSPECTIVA — Frase", text: `“${text}”` };
+  if (/^https?:\/\//i.test(window.location.href)) data.url = window.location.href;
+  try {
+    if (navigator.share) { await navigator.share(data); return; }
+  } catch (e) {
+    if (e && e.name === "AbortError") return;
+  }
+  try {
+    await copyText(data.text);
+    showToast("Frase copiada para compartilhar!");
+  } catch {
+    showToast("Não foi possível compartilhar.");
+  }
 });
 
 document.getElementById("downloadImage").addEventListener("click", () => {
